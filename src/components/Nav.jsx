@@ -8,9 +8,8 @@ class Nav extends Component {
       <article className="nav">
         <ul>
           {/*<li><a href="/about">The Trip</a></li>*/}
-          <li><Link to="about">The Trip</Link></li>
-          <li><a href="#">Podcast Episodes</a></li>
-          <li><a href="#">Map</a></li>
+          <li><Link to="about">About</Link></li>
+          <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </article>
