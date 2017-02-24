@@ -3,7 +3,6 @@ article.about {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background: url("https://images.unsplash.com/photo-1477064200359-f0f9f7e3a9e8") no-repeat center center fixed;
   height: 70em;
   section {
     width: 60%;
@@ -24,56 +23,6 @@ article.about {
       flex: 2;
       padding: 25px;
       font-size: 1.2em;
-    }
-    &.who {
-      h3 {
-        justify-content: flex-end;
-        padding-right: 1%;
-      }
-      p {
-        background-color: $blue;
-      }
-    }
-    &.what {
-      display: inline-flex;
-      padding: 10px;
-      h3 {
-        order: 2;
-        justify-content: flex-start;
-        padding-left: 1%;
-      }
-      p {
-        flex: 2;
-        order: 1;
-        background-color: $yellow;
-        color: #fff;
-        padding: 25px;
-      }
-    }
-    &.where {
-      h3 {
-        justify-content: flex-end;
-        padding-right: 1%;
-      }
-      p {
-        background-color: $lilac;
-      }
-    }
-    &.why {
-      display: inline-flex;
-      padding: 10px;
-      h3 {
-        order: 2;
-        justify-content: flex-start;
-        padding-left: 1%;
-      }
-      p {
-        flex: 2;
-        order: 1;
-        background-color: $brown;
-        color: #fff;
-        padding: 25px;
-      }
     }
   }
   @media (max-width: 640px) {
