@@ -23,7 +23,14 @@ article.home {
   }
   @media (max-width: 640px) {
     .video {
+      flex-direction: column;
       width: 100%;
+      div {
+        width: 100%;
+        p {
+          font-size: .7em;
+        }
+      }
       iframe {
         width: 100%;
       }

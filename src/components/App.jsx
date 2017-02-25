@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 // Components
 import Header from './Header.jsx';
-import Footer from './Footer.jsx';
 
 //  Styles
 import '../stylesheets/App.css';
