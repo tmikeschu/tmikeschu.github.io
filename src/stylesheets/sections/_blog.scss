@@ -5,7 +5,34 @@
   align-items: center;
   justify-content: flex-start;
   p {
-    margin-left: 5%;
+    margin-left: 3%;
     font-size: 2.2em;
+  }
+  span {
+    color: $yellow;
+    margin-left: 5%;
+    font-size: 3.5em;
+    &:last-of-type{
+      display: none;
+    }
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    margin: 0;
+    flex-flow: column;
+    span {
+      font-size: 1.8em;
+      &:first-of-type{
+        display: none;
+      }
+      &:last-of-type{
+        display: block;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 1.6em;
+      word-spacing: .2em;
+    }
   }
 }

@@ -9,7 +9,11 @@ article.about {
     border-radius: 50%;
   }
   h3 {
-    font-size: 2em;
+    font-size: 3em;
+    color: $purple;
+    align-self: flex-start;
+    margin-left: 14%;
+    border-bottom: 2px solid $yellow;
   }
   p {
     margin: 5%;
@@ -24,6 +28,10 @@ article.about {
     img {
       width: 50%;
       margin-top: 5%;
+    }
+    h3 {
+      font-size: 2em;
+      margin: 0;
     }
     p {
       width: 98%;

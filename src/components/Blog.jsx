@@ -7,7 +7,9 @@ export default class Blog extends Component {
       <div className="container">
         <article className="blog">
           <a href="https://medium.com/@tmikeschutte"><img src="https://assets.ifttt.com/images/channels/1259075256/icons/on_color_large.png" alt="medium logo"/></a>
-          <p>← Check me out on Medium.</p>
+          <span>←</span>
+          <span>↑</span>
+          <p> Find me on Medium.</p>
         </article>
       </div>
     );

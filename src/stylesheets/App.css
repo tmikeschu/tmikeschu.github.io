@@ -151,7 +151,11 @@ article.about img {
   border-radius: 50%; }
 
 article.about h3 {
-  font-size: 2em; }
+  font-size: 3em;
+  color: #310D42;
+  align-self: flex-start;
+  margin-left: 14%;
+  border-bottom: 2px solid #FFCE4C; }
 
 article.about p {
   margin: 5%;
@@ -167,6 +171,9 @@ article.about p {
   article.about img {
     width: 50%;
     margin-top: 5%; }
+  article.about h3 {
+    font-size: 2em;
+    margin: 0; }
   article.about p {
     width: 98%;
     font-size: 1em; } }
@@ -193,5 +200,29 @@ article.home {
   justify-content: flex-start; }
 
 .blog p {
-  margin-left: 5%;
+  margin-left: 3%;
   font-size: 2.2em; }
+
+.blog span {
+  color: #FFCE4C;
+  margin-left: 5%;
+  font-size: 3.5em; }
+
+.blog span:last-of-type {
+  display: none; }
+
+@media (max-width: 640px) {
+  .blog {
+    width: 100%;
+    margin: 0;
+    flex-flow: column; }
+  .blog span {
+    font-size: 1.8em; }
+  .blog span:first-of-type {
+    display: none; }
+  .blog span:last-of-type {
+    display: block; }
+  .blog p {
+    margin: 0;
+    font-size: 1.6em;
+    word-spacing: .2em; } }
