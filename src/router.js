@@ -5,6 +5,7 @@ import { Router, Route, browserHistory } from 'react-router'
 // Components
 import App from './components/App.jsx';
 import About from './components/About.jsx';
+import Home from './components/Home.jsx';
 
 // Styles
 import './stylesheets/App.css';
@@ -13,7 +14,8 @@ import './stylesheets/App.css';
 const routes = (
   <Router history={browserHistory}>
     <Route component={App}>
-      <Route path="/" component={About} />
+      <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
     </Route>
   </Router>
 );

@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Arimo|Didact+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Didact+Gothic");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ table {
   border-spacing: 0; }
 
 body, ul {
-  font-family: "Arimo", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Didact Gothic", serif; }
@@ -51,42 +51,54 @@ a {
   a:hover {
     font-weight: bold; }
 
+.container {
+  display: flex;
+  align-self: center; }
+
 .header {
   display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
   justify-content: space-between;
-  align-items: center; }
+  height: 20em;
+  width: 100%;
+  align-items: baseline; }
   .header h2 a {
-    font-size: 3em; }
+    font-size: 8em; }
+    .header h2 a:hover {
+      font-weight: normal;
+      text-decoration: underline; }
+  .header h3 {
+    font-size: 2em; }
   @media (max-width: 640px) {
     .header h2 {
       order: 1;
       font-size: .8em;
       text-align: center; } }
 
-article.nav {
-  background-color: #150033; }
-  article.nav ul {
-    margin: 20px auto;
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5em; }
-    article.nav ul li a {
+.nav {
+  background-color: #150033;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5em; }
+  .nav li {
+    margin: 1% 0; }
+    .nav li a {
       color: #fff; }
-      article.nav ul li a:hover {
+      .nav li a:hover {
         color: #FFCE4C; }
   @media (max-width: 640px) {
-    article.nav ul {
+    .nav {
       display: flex;
       flex-flow: column nowrap;
       margin: 0 auto; }
-      article.nav ul li {
+      .nav li {
         padding: 5px 0;
         width: 100%; }
-        article.nav ul li:nth-child(even) {
+        .nav li:nth-child(even) {
           background: rgba(0, 0, 0, 0.2); } }
 
 article.about {
@@ -94,7 +106,13 @@ article.about {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 70em; }
+  article.about p {
+    margin: 5%;
+    font-size: 1.5em;
+    width: 60%;
+    line-height: 1.5em; }
   article.about section {
     width: 60%;
     color: #fff;
@@ -136,26 +154,13 @@ article.about {
           padding: 5px; } }
 
 article.home {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  min-height: 60em;
+  margin: 20px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center; }
-  article.home .content {
-    font-size: 2.5em;
-    margin-left: 14%;
-    margin-top: 3%; }
-  @media (max-width: 640px) {
-    article.home {
-      min-height: 36em;
-      background-position: 76%;
-      justify-content: flex-end; }
-      article.home .content {
-        margin-bottom: 4%;
-        margin-left: 12%; }
-        article.home .content a {
-          background-color: rgba(0, 0, 0, 0.7);
-          padding: 2px;
-          padding-bottom: 0px; } }
+  align-items: center;
+  justify-content: space-around;
+  width: 100%; }
+  article.home p {
+    margin: 5%;
+    font-size: 1.5em;
+    width: 40%; }

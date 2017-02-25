@@ -1,13 +1,21 @@
 .header {
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
   justify-content: space-between;
-  align-items: center;
+  height: 360px;
+  width: 100%;
+  align-items: baseline;
   h2 {
     a {
-      font-size: 3em;
+      font-size: 8em;
+      &:hover {
+        font-weight: normal;
+        text-decoration: underline;
+      }
     }
+  }
+  h3 {
+    font-size: 2em;
   }
   @media (max-width: 640px) {
     h2 {

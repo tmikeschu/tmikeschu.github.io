@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Link } from 'react-router'
+import { Link } from 'react-router'
 import '../stylesheets/App.css';
 
 export default class Header extends Component {
