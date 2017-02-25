@@ -14,7 +14,7 @@
         font-size: 8em;
         &:hover {
           font-weight: normal;
-          text-decoration: underline;
+          border-bottom: 2px solid $yellow;
         }
       }
     }
@@ -26,10 +26,28 @@
     }
   }
   @media (max-width: 640px) {
-    h2 {
-      order: 1;
-      font-size: .8em;
-      text-align: center;
+    margin: 0;
+    flex-flow: column wrap;
+    section {
+      flex: none;
+      width: 100%;
+      h2 {
+        margin: 0;
+        letter-spacing: .2em;
+        a {
+          font-size: 4em;
+          text-align: center;
+          &:hover {
+            border-bottom: none;
+            font-weight: 500;
+          }
+        }
+      }
+      h3 {
+        font-size: 1.2em;
+        letter-spacing: .3em;
+        margin-bottom: 4%;
+      }
     }
   }
 }

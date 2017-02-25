@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
+import NavLink from './NavLink'
 import '../stylesheets/App.css';
 
 export default class Nav extends Component {
   render() {
     return (
       <ul className="nav">
-        <li><Link to="about">about</Link></li>
-        <li><Link to="blog">blog</Link></li>
-        <li><Link to="contact">contact</Link></li>
+        <li><NavLink to="about">about</NavLink></li>
+        <li><NavLink to="blog">blog</NavLink></li>
+        <li><NavLink to="contact">contact</NavLink></li>
       </ul>
     );
   }

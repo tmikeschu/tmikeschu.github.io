@@ -9,23 +9,30 @@
   align-items: center;
   font-size: 1.5em;
   li {
-    margin: 10% 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
     a {
       color: #fff;
+      display: block;
+      padding: 10% 0;
       &:hover {
         color: $yellow;
+      }
+      &.active {
+        background-color: $light-purple;
       }
     }
   }
   @media (max-width: 640px) {
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 0 auto;
+    flex: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
     li {
-      padding: 5px 0;
-      width: 100%;
-      &:nth-child(even) {
-        background: rgba(0,0,0,.2);
+      width: 33.33%;
+      a {
+        font-size: .8em;
       }
     }
   }
