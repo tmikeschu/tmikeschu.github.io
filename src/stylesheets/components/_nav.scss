@@ -1,7 +1,7 @@
 .nav {
+  flex: 1;
   background-color: $deep-purple;
   width: 100%;
-  margin: 20px auto;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -9,7 +9,7 @@
   align-items: center;
   font-size: 1.5em;
   li {
-    margin: 1% 0;
+    margin: 10% 0;
     a {
       color: #fff;
       &:hover {

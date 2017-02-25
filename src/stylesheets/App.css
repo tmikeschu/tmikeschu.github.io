@@ -51,23 +51,27 @@ a {
   a:hover {
     font-weight: bold; }
 
-.container {
-  display: flex;
-  align-self: center; }
-
 .header {
   display: flex;
   justify-content: space-between;
-  height: 20em;
   width: 100%;
-  align-items: baseline; }
-  .header h2 a {
-    font-size: 8em; }
-    .header h2 a:hover {
-      font-weight: normal;
-      text-decoration: underline; }
-  .header h3 {
-    font-size: 2em; }
+  align-items: center;
+  margin-left: 1%; }
+  .header section {
+    flex: 2; }
+    .header section h2 {
+      margin: 9% 0;
+      letter-spacing: 0.6em; }
+      .header section h2 a {
+        font-size: 8em; }
+        .header section h2 a:hover {
+          font-weight: normal;
+          text-decoration: underline; }
+    .header section h3 {
+      font-size: 2.1em;
+      text-align: right;
+      padding-right: 1%;
+      letter-spacing: .6em; }
   @media (max-width: 640px) {
     .header h2 {
       order: 1;
@@ -75,9 +79,9 @@ a {
       text-align: center; } }
 
 .nav {
+  flex: 1;
   background-color: #150033;
   width: 100%;
-  margin: 20px auto;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -85,7 +89,7 @@ a {
   align-items: center;
   font-size: 1.5em; }
   .nav li {
-    margin: 1% 0; }
+    margin: 10% 0; }
     .nav li a {
       color: #fff; }
       .nav li a:hover {
