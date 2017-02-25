@@ -123,7 +123,9 @@ a {
       flex-flow: row wrap;
       width: 100%; }
       .nav li {
-        width: 30%; } }
+        width: 33.33%; }
+        .nav li a {
+          font-size: .8em; } }
 
 article.about {
   width: 100%;
@@ -152,3 +154,8 @@ article.home {
   align-items: center;
   justify-content: space-around;
   width: 100%; }
+  @media (max-width: 640px) {
+    article.home .video {
+      width: 100%; }
+      article.home .video iframe {
+        width: 100%; } }
