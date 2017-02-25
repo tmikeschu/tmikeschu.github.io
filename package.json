@@ -2,7 +2,6 @@
   "name": "spoke-n",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tmikeschu.github.io/tmikeschu",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "node-sass": "^4.5.0",
