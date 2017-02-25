@@ -14,7 +14,6 @@ export default class App extends Component {
       <div className="container">
         <Header />
         { this.props.children }
-        <Footer />
       </div>
     );
   }
