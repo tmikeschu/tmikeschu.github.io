@@ -1,3 +1,21 @@
 .contact {
-
+  display: flex;
+  margin: 15% auto;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 95%;
+  a {
+    img {
+      width: 250px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+    a {
+      margin: 5% auto;
+    }
+  }
 }

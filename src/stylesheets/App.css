@@ -54,6 +54,7 @@ a:hover {
 
 .header {
   display: flex;
+  flex-flow: row-wrap;
   justify-content: space-between;
   width: 100%;
   align-items: center;
@@ -226,3 +227,22 @@ article.home {
     margin: 0;
     font-size: 1.6em;
     word-spacing: .2em; } }
+
+.contact {
+  display: flex;
+  margin: 15% auto;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 95%; }
+
+.contact a img {
+  width: 250px; }
+
+.contact a:hover {
+  transform: scale(1.1); }
+
+@media (max-width: 640px) {
+  .contact {
+    flex-direction: column; }
+  .contact a {
+    margin: 5% auto; } }
