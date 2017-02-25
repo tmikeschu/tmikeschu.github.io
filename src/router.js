@@ -6,6 +6,8 @@ import { Router, Route, browserHistory } from 'react-router'
 import App from './components/App.jsx';
 import About from './components/About.jsx';
 import Home from './components/Home.jsx';
+import Contact from './components/Contact.jsx';
+import Blog from './components/Blog.jsx';
 
 // Styles
 import './stylesheets/App.css';
