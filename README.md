@@ -1,4 +1,3 @@
-# The Spoken Tour
-Some friends of mine are going to bike from Denver, Colorado to Buenos Aires, Argentina, so I helped build their travel blog using React.
+[tmikeschu.github.io](https://tmikeschu.github.io/)
 
-### [Interested?](https://spoke-n.herokuapp.com/)
+Thanks for stopping by! This is the source code for my personal site, built using [Create React App](https://github.com/facebookincubator/create-react-app)
