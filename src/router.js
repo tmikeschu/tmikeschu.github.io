@@ -16,6 +16,8 @@ const routes = (
     <Route component={App}>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/contact" component={Contact} />
     </Route>
   </Router>
 );

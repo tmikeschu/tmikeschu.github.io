@@ -5,6 +5,12 @@ article.about {
   flex-direction: column;
   align-items: center;
   height: 70em;
+  img {
+    border-radius: 50%;
+  }
+  h3 {
+    font-size: 2em;
+  }
   p {
     margin: 5%;
     font-size: 1.5em;
@@ -15,8 +21,13 @@ article.about {
     margin: 0;
     padding: 0;
     height: auto;
+    img {
+      width: 50%;
+      margin-top: 5%;
+    }
     p {
       width: 98%;
+      font-size: 1em;
     }
   }
 }
