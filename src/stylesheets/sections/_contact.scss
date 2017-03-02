@@ -1,12 +1,13 @@
 .contact {
   display: flex;
-  margin: 15% auto;
-  justify-content: space-between;
+  margin: 5% auto;
+  justify-content: space-around;
   flex-flow: row wrap;
-  width: 95%;
+  width: 100%;
   a {
+    margin: 5% 0;
     img {
-      width: 250px;
+      width: 50px;
     }
     &:hover {
       transform: scale(1.1);
