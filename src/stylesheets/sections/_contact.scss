@@ -2,19 +2,23 @@
   display: flex;
   margin: 5% auto;
   justify-content: space-around;
+  text-align: center;
   flex-flow: row wrap;
   width: 100%;
   a {
     margin: 5% 0;
+    width:25%;
     img {
-      width: 50px;
+      width: 50%;
     }
     &:hover {
       transform: scale(1.1);
     }
   }
   @media (max-width: 640px) {
-    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    align-items: center;
     a {
       margin: 5% auto;
     }

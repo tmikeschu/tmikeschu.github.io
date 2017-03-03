@@ -4,8 +4,7 @@
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   font-size: 1.5em;
   li {
     width: 100%;
@@ -14,24 +13,54 @@
     a {
       color: #fff;
       display: block;
-      padding: 20% 0;
+      padding: 46% 0;
       &:hover {
         color: $yellow;
+        background-color: $purple;
       }
       &.active {
         background-color: $light-purple;
       }
     }
   }
+  div {
+    text-align: center;
+    >img {
+      width: 50%;
+      border-radius: 50%;
+    }
+  }
   @media (max-width: 640px) {
+    flex-direction: row;
     flex: none;
-    display: inline-flex;
-    flex-flow: row wrap;
+    background-color: $deep-purple;
     width: 100%;
     li {
-      width: 33.33%;
+      width: 100%;
       a {
         font-size: .8em;
+        padding: 0;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      width: 40%;
+    }
+    div {
+      width: 60%;
+      >img {
+        display: none;
+      }
+      article {
+        .contact {
+          margin: 0;
+          a {
+            img {
+              width: 25%;
+            }
+          }
+        }
       }
     }
   }

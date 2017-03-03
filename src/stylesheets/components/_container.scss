@@ -1,11 +1,26 @@
 .container {
   display: flex;
+  justify-content: flex-end;
   height: 100vh;
   .main {
+    border-left: 2px dotted $brown;
     width: 70%;
     overflow: scroll;
   }
   .nav {
     width: 30%;
+    max-width: 300px;
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+    .main {
+      margin: 1%;
+      width: 99%;
+      border-left: none;
+    }
+    .nav {
+      width: 100%;
+      max-width: inherit !important;
+    }
   }
 }

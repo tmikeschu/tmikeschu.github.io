@@ -1,10 +1,10 @@
 article.home {
-  margin: 10px auto;
+  margin: 5%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  width: 95%;
+  width: 90%;
   .video {
     width: 100%;
     justify-content: center;
@@ -18,17 +18,21 @@ article.home {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;
+      p {
+        margin-left: 5%;
+      }
     }
   }
   @media (max-width: 640px) {
+    margin: 1% auto;
+    width: 100%;
     .video {
       flex-direction: column;
-      width: 100%;
+      width: 99%;
       div {
         width: 100%;
         p {
-          font-size: .7em;
+          font-size: .6em;
         }
       }
       iframe {
