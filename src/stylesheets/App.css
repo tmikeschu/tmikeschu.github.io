@@ -178,7 +178,7 @@ article.footer {
         width: 100%; }
         .nav li a {
           font-size: .8em;
-          padding: 0; }
+          padding: 22% 0; }
       .nav .links {
         display: flex;
         align-items: center;
@@ -200,6 +200,8 @@ article.about {
   align-items: flex-start;
   overflow: scroll;
   -webkit-overflow-scrolling: touch; }
+  article.about img {
+    display: none; }
   article.about h3 {
     font-size: 3em;
     color: #310D42;
@@ -221,7 +223,8 @@ article.about {
       article.about img {
         width: 50%;
         margin: 5% 0;
-        border-radius: 50%; }
+        border-radius: 50%;
+        display: inherit !important; }
       article.about h3 {
         font-size: 2em;
         margin: 5% 0; }

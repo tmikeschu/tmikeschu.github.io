@@ -6,6 +6,9 @@ article.about {
   align-items: flex-start;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  img {
+    display: none;
+  }
   h3 {
     font-size: 3em;
     color: $purple;
@@ -30,6 +33,7 @@ article.about {
       width: 50%;
       margin: 5% 0;
       border-radius: 50%;
+      display: inherit !important;
     }
     h3 {
       font-size: 2em;
