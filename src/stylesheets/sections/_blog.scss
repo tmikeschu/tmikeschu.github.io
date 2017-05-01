@@ -4,6 +4,14 @@
   margin-left: 5%;
   align-items: center;
   justify-content: flex-start;
+  a {
+    transition: 300ms;
+    &:hover, &:focus {
+      transition: 300ms;
+      background-color: #3BB683;
+    }
+    padding: 10px;
+  }
   p {
     margin-left: 3%;
     font-size: 2.2em;
