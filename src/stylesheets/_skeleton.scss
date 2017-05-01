@@ -13,8 +13,10 @@ p {
 a {
   text-decoration: none;
   color: $light-purple;
-  &:hover {
+  transition: 300ms;
+  &:hover, &:focus {
     font-weight: bold;
+    transition: 300ms;
   }
 }
 
