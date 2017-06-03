@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react'
 import { Link } from 'react-router'
-import '../stylesheets/App.css';
+import '../stylesheets/App.css'
 
-export default class Header extends Component {
-  render() {
-    return (
-      <article className="header">
-        <section>
-          <h2><Link to="/">Mike Schutte</Link></h2>
-          <h3>software developer</h3>
-        </section>
-      </article>
-    );
-  }
-}
+const Header = () => (
+  <article className="header">
+    <section>
+      <h2><Link to="/">Mike Schutte</Link></h2>
+      <h3>software developer</h3>
+    </section>
+  </article>
+)
+
+export default Header

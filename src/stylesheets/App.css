@@ -50,8 +50,12 @@ a {
   color: #5C2445;
   transition: 300ms; }
   a:hover, a:focus {
-    font-weight: bold;
-    transition: 300ms; }
+    transition: letter-spacing 300ms ease;
+    letter-spacing: 5px; }
+
+@media (max-width: 640px) {
+  a:hover, a:focus {
+    letter-spacing: 1px; } }
 
 .container {
   display: flex;
@@ -89,13 +93,9 @@ a {
   .header section {
     flex: 2; }
     .header section h2 {
-      margin: 5% 0;
-      letter-spacing: 0.5em; }
+      margin: 5% 0; }
       .header section h2 a {
         font-size: 8em; }
-        .header section h2 a:hover {
-          font-weight: normal;
-          border-bottom: 2px solid #FFCE4C; }
     .header section h3 {
       font-size: 2em;
       letter-spacing: .5em; }
@@ -218,6 +218,8 @@ article.about {
     line-height: 1.5em; }
     article.about p:first-of-type {
       margin-top: 0; }
+    article.about p a:hover, article.about p a:focus {
+      letter-spacing: .1px; }
   @media (max-width: 640px) {
     article.about {
       margin: 2%;
@@ -283,7 +285,7 @@ article.home {
     padding: 10px; }
     .blog a:hover, .blog a:focus {
       transition: 300ms;
-      background-color: #3BB683; }
+      transform: scale(1.2); }
   .blog p {
     margin-left: 3%;
     font-size: 2.2em; }
@@ -322,10 +324,12 @@ article.home {
   width: 100%; }
   .contact a {
     margin: 5% 0;
-    width: 25%; }
+    width: 25%;
+    transition: 300ms; }
     .contact a img {
       width: 50%; }
-    .contact a:hover {
+    .contact a:hover, .contact a:focus {
+      transition: 300ms;
       transform: scale(1.1); }
   @media (max-width: 640px) {
     .contact {

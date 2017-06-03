@@ -10,13 +10,8 @@
     flex: 2;
     h2 {
       margin: 5% 0;
-      letter-spacing: 0.5em;
       a {
         font-size: 8em;
-        &:hover {
-          font-weight: normal;
-          border-bottom: 2px solid $yellow;
-        }
       }
     }
     h3 {

@@ -8,7 +8,7 @@
     transition: 300ms;
     &:hover, &:focus {
       transition: 300ms;
-      background-color: #3BB683;
+      transform: scale(1.2);
     }
     padding: 10px;
   }

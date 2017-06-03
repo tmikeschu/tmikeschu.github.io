@@ -24,6 +24,11 @@ article.about {
     &:first-of-type {
       margin-top: 0;
     }
+    a {
+      &:hover, &:focus {
+        letter-spacing: .1px;
+      }
+    }
   }
   @media (max-width: 640px) {
     margin: 2%;

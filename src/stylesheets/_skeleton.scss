@@ -15,8 +15,14 @@ a {
   color: $light-purple;
   transition: 300ms;
   &:hover, &:focus {
-    font-weight: bold;
-    transition: 300ms;
+    transition: letter-spacing 300ms ease;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  a:hover, a:focus {
+    letter-spacing: 1px;
   }
 }
 
