@@ -1,16 +1,16 @@
 // Libraries
-import React from 'react';
+import React from 'react'
 import { Router, Route, browserHistory } from 'react-router'
 
 // Components
-import App from './components/App.jsx';
-import About from './components/About.jsx';
-import Home from './components/Home.jsx';
-import Contact from './components/Contact.jsx';
-import Blog from './components/Blog.jsx';
+import App from './components/App.jsx'
+import About from './components/About.jsx'
+import Home from './components/Home.jsx'
+import Contact from './components/Contact.jsx'
+import Blog from './components/Blog.jsx'
 
 // Styles
-import './stylesheets/App.css';
+import './stylesheets/App.css'
 
 // Routes
 const routes = (
@@ -22,6 +22,6 @@ const routes = (
       <Route path="/contact" component={Contact} />
     </Route>
   </Router>
-);
+)
 
-export default routes;
+export default routes
