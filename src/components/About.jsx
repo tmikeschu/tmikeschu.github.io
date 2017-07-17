@@ -1,5 +1,4 @@
 import React from 'react'
-import '../stylesheets/App.css'
 
 const About = () => (
   <article className="about">

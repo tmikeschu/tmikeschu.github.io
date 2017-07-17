@@ -1,5 +1,4 @@
 import React from 'react'
-import '../stylesheets/App.css'
 
 const Home = () => (
   <article className="home">

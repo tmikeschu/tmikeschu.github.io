@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router'
-import '../stylesheets/App.css'
 
 const Header = () => (
   <article className="header">
