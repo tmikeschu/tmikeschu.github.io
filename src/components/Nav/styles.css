@@ -1,0 +1,125 @@
+.Nav {
+  display: flex;
+  background-color: var(--deep-purple);
+}
+
+.Nav__links {
+  display: flex;
+  align-items: stretch;
+  width: 40%;
+}
+
+.Nav__link {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms;
+  font-size: 5vw;
+}
+
+.Nav__contact {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Nav__image {
+  display: none;
+}
+
+.Nav__contactSocial {
+  margin: 0;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Nav__contactSocial a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Nav__contactSocial a img {
+  transition: transform 300ms;
+  width: 75%;
+}
+
+.Nav__link:hover {
+  transition: background-color 300ms;
+  background-color: var(--purple);
+}
+.Nav__link--active {
+  background-color: var(--light-purple);
+}
+
+.Nav__contactSocial a:hover,
+.Nav__contactSocial a:focus {
+  opacity: 1;
+}
+
+.Nav__contactSocial a:hover img,
+.Nav__contactSocial a:focus img {
+  transition: transform 300ms;
+  transform: rotate(10deg);
+}
+
+.Nav__contactSocial a:nth-of-type(even):hover img,
+.Nav__contactSocial a:nth-of-type(even):focus img {
+  transition: transform 300ms;
+  transform: rotate(-10deg);
+}
+
+@media (min-width: 640px) {
+  .Nav {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .Nav__links {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .Nav__link {
+    font-size: 32px;
+    height: 96px;
+  }
+
+  .Nav__contact {
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+  }
+
+  .Nav__image {
+    display: block;
+  }
+
+  .Nav__contactSocial {
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+  }
+
+  .Nav__contactSocial a {
+    width: 100%;
+  }
+
+  .Nav__contactSocial a img {
+    width: 30%;
+  }
+
+  .Nav__image {
+    width: 40%;
+    border-radius: 50%;
+  }
+}

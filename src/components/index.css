@@ -1,0 +1,43 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Raleway|Didact+Gothic");
+@import "./styles.css";
+
+:root {
+  --heading-font: "Didact Gothic", serif;
+  --body-font: "Raleway", sans-serif;
+  --mobile-nav-height: 80px;
+  --deep-purple: #150033;
+  --purple: #310d42;
+  --light-purple: #5c2445;
+  --yellow: #ffce4c;
+  --brown: #ab6946;
+}
+
+body,
+ul {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--brown);
+}
+
+p a:hover,
+p a:focus {
+  text-decoration: underline;
+}

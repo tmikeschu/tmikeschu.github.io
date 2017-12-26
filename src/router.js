@@ -1,26 +1,15 @@
-// Libraries
-import React from 'react'
-import { Router, Route, browserHistory } from 'react-router'
+import React from "react"
+import { HashRouter as Router, Route } from "react-router-dom"
 
-// Components
-import App from './components/App.jsx'
-import About from './components/About.jsx'
-import Home from './components/Home.jsx'
-import Contact from './components/Contact.jsx'
-import Blog from './components/Blog.jsx'
+import { About, App, Blog, Home } from "./components"
 
-// Styles
-import './stylesheets/App.css'
-
-// Routes
 const routes = (
-  <Router history={browserHistory}>
-    <Route component={App}>
-      <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/blog" component={Blog} />
-      <Route path="/contact" component={Contact} />
-    </Route>
+  <Router>
+    <App>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/blog" component={Blog} />
+    </App>
   </Router>
 )
 

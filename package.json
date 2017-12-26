@@ -1,19 +1,24 @@
 {
-  "name": "spoke-n",
+  "name": "tmikeschu",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "node-sass": "^4.5.0",
-    "npm-run-all": "^4.0.1",
-    "sass-loader": "^6.0.1"
+    "lint-staged": "^4.2.3",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.7.3",
+    "stylelint": "^8.1.1",
+    "stylelint-config-standard": "^17.0.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.7.0"
   },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
-    "webpack": "^2.6.1"
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,6 +26,20 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
+    "deploy": "gh-pages -d build",
+    "lint-staged": "$(yarn bin)/lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier --no-semi --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.css": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "pre-commit": ["lint-staged"]
 }

@@ -1,0 +1,34 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.Header__main {
+  font-size: 15vw;
+  transition: transform 300ms;
+}
+
+.Header__main a {
+  color: var(--light-purple);
+}
+
+.Header__main:hover,
+.Header__main:focus {
+  transition: opacity 300ms;
+  opacity: 0.8;
+}
+
+.Header__sub {
+  font-size: 7vw;
+}
+
+@media (min-width: 640px) {
+  .Header__main {
+    font-size: 120px;
+  }
+
+  .Header__sub {
+    font-size: 48px;
+  }
+}

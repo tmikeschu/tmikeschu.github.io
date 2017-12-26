@@ -1,0 +1,41 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.App__main {
+  margin: 0;
+  width: 100%;
+  height: calc(100vh - var(--mobile-nav-height));
+  padding: 8px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Nav {
+  width: 100%;
+  height: var(--mobile-nav-height);
+}
+
+@media (min-width: 640px) {
+  .App {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .App__main {
+    border-left: 2px dotted var(--brown);
+    padding: 32px;
+    width: 70%;
+    height: 100vh;
+  }
+
+  .Nav {
+    width: 30%;
+    max-width: 300px;
+    height: 100vh;
+  }
+}
