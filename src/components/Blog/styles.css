@@ -1,0 +1,35 @@
+.Blog {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Blog a {
+  transition: transform 300ms;
+}
+
+.Blog a:hover,
+.Blog a:focus {
+  transition: transform 300ms;
+  transform: rotate(-10deg);
+}
+
+.Blog p {
+  margin-left: 16px;
+  font-size: 32px;
+  line-height: 1.5em;
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .Blog {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .Blog p {
+    margin-left: 0;
+    font-size: 24px;
+  }
+}

@@ -1,17 +1,16 @@
-import React from 'react'
-import Header from './Header.jsx'
-import Nav from './Nav.jsx'
-import '../stylesheets/App.css'
+import React from "react"
+import Header from "./Header"
+import Nav from "./Nav"
+import "./index.css"
 
 const App = props => (
-  <div className="container">
-    <article className="main">
+  <div className="App">
+    <article className="App__main">
       <Header />
-      { props.children }
+      {props.children}
     </article>
     <Nav />
   </div>
 )
 
 export default App
-

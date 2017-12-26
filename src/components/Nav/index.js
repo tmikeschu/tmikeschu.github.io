@@ -1,15 +1,34 @@
 import React from 'react'
-import NavLink from './NavLink'
+import { NavLink } from 'react-router-dom'
+import './styles.css'
+
+const makeNavLink = to => (
+  <NavLink
+    to={`/${to}`}
+    key={to}
+    activeClassName="Nav__link--active"
+    className="Nav__link"
+  >
+    {to}
+  </NavLink>
+)
+
+const links = ['about', 'blog']
+const navLinks = links.map(link => makeNavLink(link))
 
 const Nav = () => (
-  <ul className="nav">
-    <div className="links">
-      <li><NavLink to="about">about</NavLink></li>
-      <li><NavLink to="blog">blog</NavLink></li>
+  <ul className="Nav">
+    <div className="Nav__links">
+      {navLinks}
     </div>
-    <div>
-      <img src="https://www.turing.io/sites/default/files/styles/graduate_full_profile/public/IMG_0689-1_0.jpg?itok=MI9LeK3w" alt="profile"/>
-      <article className="contact">
+
+    <div className="Nav__contact">
+      <img
+        className="Nav__image"
+        src="https://pbs.twimg.com/profile_images/906270836302127104/tSfPsyWR_400x400.jpg"
+        alt="profile"
+      />
+      <article className="Nav__contactSocial">
         <a href="https://github.com/tmikeschu" target="_blank" rel="noopener noreferrer"><img src="http://www.iconsplace.com/icons/preview/white/github-256.png" alt="github"/></a>
         <a href="https://www.linkedin.com/in/tmikeschu" target="_blank" rel="noopener noreferrer"><img src="https://travellingmysteryguest.files.wordpress.com/2014/03/linkedin.png" alt="linkedin"/></a>
         <a href="mailto:tmikeschutte@gmail.com" target="_blank" rel="noopener noreferrer"><img src="http://www.clker.com/cliparts/5/S/U/Y/A/R/email-icon-hi.png" alt="github"/></a>
