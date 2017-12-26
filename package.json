@@ -1,19 +1,21 @@
 {
   "name": "tmikeschu",
+  "homepage": "https://tmikeschu.github.io/me",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.4.0",
     "lint-staged": "^4.2.3",
     "pre-commit": "^1.2.2",
     "prettier": "^1.7.3",
     "stylelint": "^8.1.1",
-    "stylelint-config-standard": "^17.0.0",
-    "eslint-plugin-prettier": "^2.4.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-import-resolver-webpack": "^0.8.3",
-    "eslint-plugin-import": "^2.7.0"
+    "stylelint-config-standard": "^17.0.0"
   },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
@@ -41,5 +43,7 @@
       "git add"
     ]
   },
-  "pre-commit": ["lint-staged"]
+  "pre-commit": [
+    "lint-staged"
+  ]
 }
