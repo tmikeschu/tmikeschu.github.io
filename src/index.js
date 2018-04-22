@@ -1,9 +1,6 @@
-import 'react'
-import { render } from 'react-dom'
+import "react"
+import { render } from "react-dom"
 
-import routes from './router.js'
+import routes from "./router.js"
 
-render(
-  routes,
-  document.getElementById('root')
-)
+render(routes, document.getElementById("root"))

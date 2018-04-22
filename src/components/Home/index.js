@@ -1,15 +1,15 @@
-import React from 'react'
-import './styles.css'
+import React from "react"
+import "./styles.css"
 
 const smiley = (
-  <span role="img" aria-label="smiley">😊</span>
+  <span role="img" aria-label="smiley">
+    😊
+  </span>
 )
 
 const Home = () => (
   <article className="Home">
-    <h2 className="Home__videoCaption">
-      programming is my craft {smiley}
-    </h2>
+    <h2 className="Home__videoCaption">programming is my craft {smiley}</h2>
     <div className="Home__videoPlayerWrapper">
       <iframe
         className="Home__videoPlayer"
