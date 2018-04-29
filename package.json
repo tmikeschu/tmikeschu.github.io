@@ -1,6 +1,6 @@
 {
   "name": "tmikeschu",
-  "homepage": "https://tmikeschu.github.io",
+  "homepage": "https://tmikeschu.co/#/",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -28,7 +28,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -b master",
     "lint-staged": "$(yarn bin)/lint-staged"
   },
   "lint-staged": {
@@ -37,13 +37,7 @@
       "eslint --fix",
       "git add"
     ],
-    "src/**/*.css": [
-      "prettier --write",
-      "stylelint --fix",
-      "git add"
-    ]
+    "src/**/*.css": ["prettier --write", "stylelint --fix", "git add"]
   },
-  "pre-commit": [
-    "lint-staged"
-  ]
+  "pre-commit": ["lint-staged"]
 }
