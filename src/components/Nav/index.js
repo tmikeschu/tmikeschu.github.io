@@ -32,10 +32,7 @@ const Nav = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="http://www.iconsplace.com/icons/preview/white/github-256.png"
-            alt="github"
-          />
+          <img src="github.png" alt="github" />
         </a>
         <a
           href="https://www.linkedin.com/in/tmikeschu"
