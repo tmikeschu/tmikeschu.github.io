@@ -3,11 +3,7 @@ import "./styles.css"
 
 const About = () => (
   <article className="About">
-    <img
-      className="About__image"
-      src="https://www.turing.io/sites/default/files/styles/graduate_full_profile/public/IMG_0689-1_0.jpg?itok=MI9LeK3w"
-      alt="profile"
-    />
+    <img className="About__image" src="headshot.jpg" alt="profile" />
     <p className="About__content">
       Detroit based. Bozeman, Seattle, and Denver roots. Finding my kicks via
       software development, running, music, film, books, sociology, team

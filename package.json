@@ -37,7 +37,13 @@
       "eslint --fix",
       "git add"
     ],
-    "src/**/*.css": ["prettier --write", "stylelint --fix", "git add"]
+    "src/**/*.css": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ]
   },
-  "pre-commit": ["lint-staged"]
+  "pre-commit": [
+    "lint-staged"
+  ]
 }

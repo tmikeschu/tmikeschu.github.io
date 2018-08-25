@@ -21,11 +21,7 @@ const Nav = () => (
     <div className="Nav__links">{navLinks}</div>
 
     <div className="Nav__contact">
-      <img
-        className="Nav__image"
-        src="https://pbs.twimg.com/profile_images/906270836302127104/tSfPsyWR_400x400.jpg"
-        alt="profile"
-      />
+      <img className="Nav__image" src="headshot.jpg" alt="profile" />
       <article className="Nav__contactSocial">
         <a
           href="https://github.com/tmikeschu"
