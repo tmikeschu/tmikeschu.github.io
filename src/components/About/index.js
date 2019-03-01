@@ -26,23 +26,30 @@ const About = () => (
       <span style={{ fontWeight: "bolder" }}>
         liberate through enthusiastic education.
       </span>{" "}
-      To do this for myself and for others is what makes me come alive.<br />
+      To do this for myself and for others is what makes me come alive.
+      <br />
       <br /> Liberate captures both a sense of empowerment and the harsh reality
-      that being set free is often disorienting.<br />
+      that being set free is often disorienting.
+      <br />
       <br />I chose the preposition ‘through’ because it highlights the need to
       face the adversity of liberation directly by going through it, not around,
-      above, et cetera.<br />
-      <br />While painted-chest sports fans might come to mind, enthusiasm comes
-      from root ‘en theos’, meaning to be one with or inspired by God. Taking it
-      out of a theological context, to be enthusiastic is to feel a connection
-      to something greater, which is essential for creating intrinsic and
+      above, et cetera.
+      <br />
+      <br />
+      While painted-chest sports fans might come to mind, enthusiasm comes from
+      root ‘en theos’, meaning to be one with or inspired by God. Taking it out
+      of a theological context, to be enthusiastic is to feel a connection to
+      something greater, which is essential for creating intrinsic and
       sustainable drive. <br />
-      <br />Education also has an interesting etymological root. The Latin
-      ‘educere’ means to come out of some place, which really speaks to how
-      transformative teaching and learning can be: it can literally bring you
-      out of one place (often some form of figurative darkness) to another
-      (perhaps unsurprisingly referred to as enLIGHTenment).<br />
-      <br />These words, powerful in meaning on their own, come together to
+      <br />
+      Education also has an interesting etymological root. The Latin ‘educere’
+      means to come out of some place, which really speaks to how transformative
+      teaching and learning can be: it can literally bring you out of one place
+      (often some form of figurative darkness) to another (perhaps
+      unsurprisingly referred to as enLIGHTenment).
+      <br />
+      <br />
+      These words, powerful in meaning on their own, come together to
       communicate more broadly that personal growth is a worthy, necessary, and
       rewarding endeavor.{" "}
     </p>
@@ -52,8 +59,8 @@ const About = () => (
       <a href="https://github.com/facebookincubator/create-react-app">
         {" "}
         Create React App
-      </a>. Hand-rolled styling with flexboxes, media queries, and BEM
-      conventions.
+      </a>
+      . Hand-rolled styling with flexboxes, media queries, and BEM conventions.
     </p>
   </article>
 )
