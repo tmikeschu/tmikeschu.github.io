@@ -1,0 +1,28 @@
+.SocialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.SocialLink.--Medium {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.SocialLink a {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SocialLink a svg {
+  width: 100%;
+  transition: transform 300ms;
+}
+
+.SocialLink a:hover,
+.SocialLink a:focus {
+  opacity: 1;
+}

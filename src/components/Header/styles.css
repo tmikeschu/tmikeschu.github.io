@@ -1,34 +1,29 @@
 .Header {
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 64px;
+  justify-content: center;
 }
 
-.Header__main {
-  font-size: 15vw;
-  transition: transform 300ms;
-}
-
-.Header__main a {
-  color: var(--light-purple);
-}
-
-.Header__main:hover,
-.Header__main:focus {
-  transition: opacity 300ms;
-  opacity: 0.8;
-}
-
+.Header__main,
 .Header__sub {
-  font-size: 7vw;
+  font-size: 20vmin;
+  transition: color 1s ease;
 }
 
-@media (min-width: 640px) {
-  .Header__main {
-    font-size: 120px;
-  }
-
+@media (min-width: 460px) {
+  .Header__main,
   .Header__sub {
-    font-size: 48px;
+    font-size: 15vmin;
+  }
+}
+
+@media (min-width: 600px) {
+  .Header__main,
+  .Header__sub {
+    font-size: 11vmin;
   }
 }

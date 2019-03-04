@@ -1,21 +1,47 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css?family=Raleway|Didact+Gothic");
-@import "./styles.css";
+@import "./App.css";
 
 :root {
-  --heading-font: "Didact Gothic", serif;
-  --body-font: "Raleway", sans-serif;
+  --font--heading: "Didact Gothic", serif;
+  --font--body: "Raleway", sans-serif;
   --mobile-nav-height: 80px;
-  --deep-purple: #150033;
-  --purple: #310d42;
-  --light-purple: #5c2445;
-  --yellow: #ffce4c;
-  --brown: #ab6946;
+  --breakpoint: 768px;
+
+  --color1: #3d348b;
+  --color2: #7678ed;
+  --color3: #f7b801;
+  --color4: #f18701;
+  --color5: #f35b04;
+
+  --color6: #4c1036;
+  --color7: #7b4b94;
+  --color8: #72195a;
+  --color9: #71a9f7;
+  --color10: #6b5ca5;
+
+  --color11: #3b3561;
+  --color12: #dd7373;
+  --color13: #ead94c;
+  --color14: #d1d1d1;
+  --color15: #51a3a3;
+
+  --color16: #000f08;
+  --color17: #136f63;
+  --color18: #e0ca3c;
+  --color19: #f34213;
+  --color20: #3e2f5b;
+
+  --color21: #262730;
+  --color22: #77ba99;
+  --color23: #d7c0d0;
+  --color24: #d33f49;
+  --color25: #eff0d1;
 }
 
 body,
 ul {
-  font-family: var(--body-font);
+  font-family: var(--font--body);
 }
 
 h1,
@@ -24,12 +50,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
+  font-family: var(--font--heading);
 }
 
 p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 a {
@@ -40,4 +66,8 @@ a {
 p a:hover,
 p a:focus {
   text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
 }

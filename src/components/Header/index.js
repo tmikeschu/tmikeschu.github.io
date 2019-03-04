@@ -1,13 +1,31 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "./styles.css"
 
-const Header = () => (
+const lines = [
+  { type: "main", text: "t.", tag: "h2" },
+  { type: "main", text: "mike", tag: "h2" },
+  { type: "main", text: "schutte", tag: "h2" },
+  { type: "sub", text: "software", tag: "h3" },
+  { type: "sub", text: "developer", tag: "h3" },
+]
+
+const toColor = (i, base) => {
+  return `var(--color${base * 5 + ((i % 4) + 2)})`
+}
+
+const Header = ({ colorBase = 0 }) => (
   <article className="Header">
-    <h2 className="Header__main">
-      <Link to="/">t. mike schutte</Link>
-    </h2>
-    <h3 className="Header__sub">software developer</h3>
+    {lines.map(({ tag: T, text, type }, i) => (
+      <T
+        className={`Header__${type}`}
+        key={text}
+        style={{
+          color: toColor(i, colorBase),
+        }}
+      >
+        {text}
+      </T>
+    ))}
   </article>
 )
 
