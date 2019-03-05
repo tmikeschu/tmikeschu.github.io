@@ -4,6 +4,7 @@ import Video from "./Video"
 import Headshot from "./Headshot"
 import About from "./About"
 import { Github, LinkedIn, Email, Twitter, Medium } from "./SocialLinks"
+import Palette from "./Palette"
 import "./index.css"
 
 export const toColor = (i, base = 1) => base * 5 + ((i % 5) + 1)
@@ -32,7 +33,9 @@ const App = props => {
         role="button"
         tabIndex="0"
         onClick={() => changeColors({ colorSwatchCount: 5 })}
-      />
+      >
+        <Palette fill={`var(--color${toColor(2, colorBase)})`} />
+      </div>
       {panels.map((C, i) => {
         return (
           <div
