@@ -24,6 +24,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
+    "add-domain": "echo \"tmikeschu.com\" > build/CNAME",
     "deploy": "gh-pages -d build -b master",
     "lint-staged": "$(npm bin)/lint-staged"
   },
