@@ -10,11 +10,11 @@
 
 .Header__main,
 .Header__sub {
-  font-size: 20vmin;
+  font-size: 15vmin;
   transition: color 1s ease;
 }
 
-@media (min-width: 460px) {
+@media (min-width: 400px) {
   .Header__main,
   .Header__sub {
     font-size: 15vmin;
