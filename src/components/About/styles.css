@@ -1,9 +1,7 @@
 .About {
   width: 100%;
   max-width: 780px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   color: white;
@@ -21,7 +19,12 @@
   margin-bottom: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
+  .About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .About h3 {
     font-size: 3rem;
   }
