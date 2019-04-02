@@ -1,0 +1,22 @@
+.Projects {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Projects h2,
+.Projects p {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.Projects__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.Projects__links__link {
+  display: flex;
+  color: white;
+}

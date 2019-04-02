@@ -3,6 +3,7 @@ import Header from "./Header"
 import Video from "./Video"
 import Headshot from "./Headshot"
 import About from "./About"
+import Projects from "./Projects"
 import { Github, LinkedIn, Email, Twitter, Medium } from "./SocialLinks"
 import Palette from "./Palette"
 import "./index.css"
@@ -19,6 +20,7 @@ const panels = [
   LinkedIn,
   Email,
   About,
+  Projects,
 ]
 const App = props => {
   const [colorBase, setColorBase] = useState(0)

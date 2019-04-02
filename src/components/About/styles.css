@@ -9,13 +9,11 @@
   margin: 0 auto;
 }
 
-.About h3 {
-  font-size: 2rem;
+.About h2 {
   margin-bottom: 1rem;
 }
 
 .About p {
-  line-height: 1.5em;
   margin-bottom: 1rem;
 }
 
@@ -24,12 +22,5 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .About h3 {
-    font-size: 3rem;
-  }
-
-  .About p {
-    font-size: 1.5rem;
   }
 }

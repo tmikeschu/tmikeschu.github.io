@@ -3,7 +3,7 @@ import "./styles.css"
 
 const About = () => (
   <article className="About">
-    <h3 className="About__header">me</h3>
+    <h2 className="About__header">me</h2>
     <p className="About__content">
       Detroit based. Bozeman, Seattle, and Denver roots. Finding my kicks via
       software development, running, music, film, books, sociology, team
@@ -16,7 +16,7 @@ const About = () => (
       world by a love for learning.
     </p>
 
-    <h3 className="About__header">this site</h3>
+    <h2 className="About__header">this site</h2>
     <p className="About__content">
       I built this site on top of Facebook's
       <a href="https://github.com/facebookincubator/create-react-app">
