@@ -90,7 +90,7 @@ const App = () => {
     })
   }
 
-  const palleteColor = Math.floor(scrollY / height) + 3
+  const palleteColor = (Math.floor(scrollY / height) || 0) + 3
 
   return (
     <div className="App">
