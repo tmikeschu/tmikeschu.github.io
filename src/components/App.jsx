@@ -24,7 +24,7 @@ const panels = [
 ]
 
 const initialState = {
-  colorBase: 0,
+  colorBase: 2,
   scrollY: 0,
   height: 0,
 }
