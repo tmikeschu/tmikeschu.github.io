@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useReducer, useEffect } from "react"
 import Header from "./Header"
 import Video from "./Video"
 import Headshot from "./Headshot"
@@ -22,11 +22,75 @@ const panels = [
   About,
   Projects,
 ]
-const App = props => {
-  const [colorBase, setColorBase] = useState(0)
-  const changeColors = ({ colorSwatchCount }) => {
-    setColorBase((colorBase + 1) % colorSwatchCount)
+
+const initialState = {
+  colorBase: 0,
+  scrollY: 0,
+  height: 0,
+}
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "SET_COLOR_BASE": {
+      return {
+        ...state,
+        colorBase: action.payload,
+      }
+    }
+
+    case "SET_SCROLL_Y": {
+      return {
+        ...state,
+        scrollY: action.payload,
+      }
+    }
+
+    case "SET_HEIGHT": {
+      return {
+        ...state,
+        height: action.payload,
+      }
+    }
+
+    default: {
+      return state
+    }
   }
+}
+
+const App = () => {
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  const { colorBase, scrollY, height } = state
+
+  useEffect(() => {
+    dispatch({
+      type: "SET_HEIGHT",
+      payload: document.documentElement.clientHeight,
+    })
+
+    const onScroll = () => {
+      dispatch({
+        type: "SET_SCROLL_Y",
+        payload: document.scrollingElement.scrollTop,
+      })
+    }
+
+    window.addEventListener("scroll", onScroll)
+
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+    }
+  }, [])
+
+  const changeColors = ({ colorSwatchCount }) => () => {
+    dispatch({
+      type: "SET_COLOR_BASE",
+      payload: (colorBase + 1) % colorSwatchCount,
+    })
+  }
+
+  const palleteColor = Math.floor(scrollY / height) + 3
 
   return (
     <div className="App">
@@ -34,21 +98,20 @@ const App = props => {
         className="ColorChanger"
         role="button"
         tabIndex="0"
-        onClick={() => changeColors({ colorSwatchCount: 5 })}
+        onClick={changeColors({ colorSwatchCount: 5 })}
       >
-        <Palette fill={`var(--color${toColor(2, colorBase)})`} />
+        <Palette fill={`var(--color${toColor(palleteColor, colorBase)})`} />
       </div>
-      {panels.map((C, i) => {
-        return (
-          <div
-            key={C.name}
-            style={{ backgroundColor: `var(--color${toColor(i, colorBase)})` }}
-            className="Panel"
-          >
-            <C colorBase={colorBase} />
-          </div>
-        )
-      })}
+
+      {panels.map((C, i) => (
+        <div
+          key={C.name}
+          style={{ backgroundColor: `var(--color${toColor(i, colorBase)})` }}
+          className="Panel"
+        >
+          <C colorBase={colorBase} />
+        </div>
+      ))}
     </div>
   )
 }
