@@ -3,7 +3,9 @@ import "./styles.css"
 
 const Headshot = () => (
   <div className="Headshot">
-    <img src="headshot.jpg" alt="profile" />
+    <div>
+      <img src="headshot.jpg" alt="profile" />
+    </div>
   </div>
 )
 
