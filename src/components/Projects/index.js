@@ -8,7 +8,12 @@ const pageInfo = ({ name }) => ({ name })
 const pipe = (...fns) => x => fns.reduce((y, fn) => fn(y), x)
 const hasPages = x => x.has_pages
 
-const jv = ["mogo-reporter", "the-shelf", "tmikeschu.github.io"]
+const jv = [
+  "mogo-reporter",
+  "the-shelf",
+  "tmikeschu.github.io",
+  "the-spoken-tour",
+]
 
 export default class Projects extends Component {
   constructor(props) {

@@ -4,23 +4,26 @@ import Video from "./Video"
 import Headshot from "./Headshot"
 import About from "./About"
 import Projects from "./Projects"
-import { Github, LinkedIn, Email, Twitter, Medium } from "./SocialLinks"
+import Links from "./SocialLinks"
 import Palette from "./Palette"
 import "./index.css"
+
+const { Github, LinkedIn, Email, Twitter, Medium, CodeSandbox } = Links
 
 export const toColor = (i, base = 1) => base * 5 + ((i % 5) + 1)
 
 const panels = [
   Header,
   Headshot,
-  Video,
   Github,
+  CodeSandbox,
   Twitter,
   Medium,
   LinkedIn,
   Email,
   About,
   Projects,
+  Video,
 ]
 
 const initialState = {
@@ -105,7 +108,7 @@ const App = () => {
 
       {panels.map((C, i) => (
         <div
-          key={C.name}
+          key={C.displayName || C.name || i}
           style={{ backgroundColor: `var(--color${toColor(i, colorBase)})` }}
           className="Panel"
         >

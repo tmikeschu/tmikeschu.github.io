@@ -5,12 +5,18 @@ import GithubSVG from "./Github"
 import TwitterSVG from "./Twitter"
 import LinkedInSVG from "./LinkedIn"
 import EmailSVG from "./Email"
+import CodeSandboxSVG from "./CodeSandbox"
 
 const links = [
   {
     name: "Github",
     href: "https://github.com/tmikeschu",
     component: GithubSVG,
+  },
+  {
+    name: "CodeSandbox",
+    href: "https://codesandbox.io/u/tmikeschu",
+    component: CodeSandboxSVG,
   },
   {
     name: "Twitter",
@@ -38,8 +44,8 @@ const makeLink = ({ href, component: C, name }) => (
   </div>
 )
 
-export const Github = () => makeLink(links[0])
-export const Twitter = () => makeLink(links[1])
-export const Medium = () => makeLink(links[2])
-export const LinkedIn = () => makeLink(links[3])
-export const Email = () => makeLink(links[4])
+export default links.reduce((acc, el) => {
+  const C = () => makeLink(el)
+  C.displayName = el.name
+  return { ...acc, [el.name]: C }
+}, {})
