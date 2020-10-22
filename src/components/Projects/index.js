@@ -6,7 +6,7 @@ const filter = pred => xs => xs.filter(pred)
 const map = mapper => xs => xs.map(mapper)
 const pageInfo = ({ name }) => ({ name })
 const pipe = (...fns) => x => fns.reduce((y, fn) => fn(y), x)
-const hasPages = x => x.has_pages
+const hasPages = x => x.has_pages || x.homepage
 
 const jv = [
   "mogo-reporter",
