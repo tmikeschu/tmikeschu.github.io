@@ -6,7 +6,9 @@ const filter = pred => xs => xs.filter(pred)
 const map = mapper => xs => xs.map(mapper)
 const pageInfo = ({ name }) => ({ name })
 const pipe = (...fns) => x => fns.reduce((y, fn) => fn(y), x)
-const hasPages = x => x.has_pages || x.homepage
+const hasPages = x => {
+  return x.has_pages || special.includes(x.name)
+}
 
 const jv = [
   "mogo-reporter",
@@ -14,6 +16,8 @@ const jv = [
   "tmikeschu.github.io",
   "the-spoken-tour",
 ]
+
+const special = ["avett-rx"]
 
 export default class Projects extends Component {
   constructor(props) {
